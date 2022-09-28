@@ -110,6 +110,17 @@
     font-display: swap
 }
 
+.fn-gothic-500 {
+    font-family: 'ITC Franklin Gothic Std';
+    font-weight: 500;
+}
+
+.fn-gothic-400 {
+    font-family: 'ITC Franklin Gothic Std';
+    font-weight: 400;
+}
+
+
 .fit-cover {
     object-fit: cover
 }
@@ -981,3 +992,33 @@ input:not(:checked)+.toggle-button:before {
 input:checked+.toggle-button:before {
     left: calc(100% - (var(--toggle-button-size) + calc(var(--toggle-track-padding) - 2px)))
 }
+
+/* fixing css start  */
+.features-icons img {
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.adjust-with-field {
+    margin-top: 1.6rem;
+}
+
+.color-p-black p {
+    color: black;
+}
+
+.label-style-one label {
+    line-height: 15px;
+    font-family: 'ITC Franklin Gothic Std';
+    font-weight: 500 !important;
+    display: block;
+    margin-bottom: 2px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .adjust-with-field {
+        margin-top: 1rem;
+    }
+}
+
+/* fixing css end  */
