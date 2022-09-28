@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>The New Room Cloud</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=f1a8fe9e98944b9d682ec5c3efac8f17">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=54e47069b98dabba4f985ae666b49ea6">
+</head>
+
+<body>
+    <!-- Start: Header Section -->
+    <header class="bg-white" id="header-2">
+        <nav class="custom-navbar" style="border-bottom: 1px solid #CBCBCB;">
+            <div class="d-flex align-items-center py-3 py-lg-4 ps-3">
+                <!-- Start: Navbar Logo --><a class="navbar-brand py-0 me-3" href="#"><img src="assets/img/logo.svg?h=0c5e83ea73e8a8f261730e058bed418f"></a><!-- End: Navbar Logo -->
+            </div>
+            <div class="d-flex align-items-center py-3 py-lg-4">
+                <!-- Start: Navbar Search -->
+                <form class="flex-grow-1 navbar-search"><input class="form-control" type="search" placeholder="Busca entre miles de comunicados, imágenes y vídeos"><img class="position-absolute" src="assets/img/magnifying-glass.png?h=87152335a85bda0b7605ca3c6d14f785"></form><!-- End: Navbar Search --><span class="d-none d-lg-inline-block v-line mx-4"></span>
+            </div>
+            <div class="d-lg-flex justify-content-lg-end align-items-lg-center py-3 py-lg-4 pe-3">
+                <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon btn-avatar p-2 me-2 ms-2" role="button" id="btn-avatar"><span class="text-nowrap d-none d-xl-inline-block">Yolanda Sacristán</span><img class="rounded-circle ms-xl-2" src="assets/img/avatar.png?h=51c32f6d39107a2efda675082995c643"></a><!-- End: Button Icon Theme -->
+                <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon p-2" role="button" id="btn-logout" href="index.html"><img src="assets/img/icon-19.png?h=ab1c5b16dbf502a8ede674c3e5fb35c1" class="me-xl-2"><span class="d-none d-xl-inline-block">Salir</span></a><!-- End: Button Icon Theme -->
+            </div>
+            <div class="d-lg-block justify-content-between align-items-center px-3">
+                <div class="d-flex align-items-center">
+                    <!-- Start: Button Icon Theme --><a class="btn d-none d-lg-inline-flex align-items-center btn-icon p-2" role="button" href="home-platform.html"><img src="assets/img/icon-18.png?h=e1369a355e092c6266612e861cde4fcd"><span class="ms-lg-2">Volver</span></a><!-- End: Button Icon Theme -->
+                    <!-- Start: Button Icon Theme --><button class="btn d-inline-flex d-lg-none align-items-center btn-icon p-2" id="btn-filter" type="button" data-bs-toggle="modal" data-bs-target="#modal-1"><img src="assets/img/filter.png?h=a54d9ba2ba030f10230720693e30f94f"><span class="d-none d-xl-inline-block ms-xl-2">Filtrar y ordenar</span></button><!-- End: Button Icon Theme -->
+                </div>
+            </div>
+            <div class="d-lg-flex align-items-lg-center py-lg-4">
+                <div class="d-flex justify-content-between align-items-center justify-content-lg-start">
+                    <div class="flex-grow-1 flex-lg-grow-0"><select class="form-select form-select-icon custom-select">
+                            <option value="" selected="">Todo</option>
+                            <option value="" selected="">Comunicados</option>
+                            <option value="">Imágenes</option>
+                            <option value="">Vídeos</option>
+                        </select></div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><button class="btn btn-light d-inline-flex align-items-center btn-icon p-2 mx-2" type="button" data-bs-toggle="modal" data-bs-target="#modal-2"><img src="assets/img/icon-17.png?h=37d1f9d7523495177b497e03e4a10c3d"><span class="d-none d-xxl-inline-block ms-xl-2">Marcas</span></button><!-- End: Button Icon Theme -->
+                    </div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><button class="btn btn-light d-inline-flex align-items-center btn-icon p-2 me-2" type="button"><img src="assets/img/gear.png?h=8866fd6505bd825ed530c2f0ad941a49"><span class="d-none d-xxl-inline-block ms-xl-2">Búsqueda Avanzada</span></button><!-- End: Button Icon Theme -->
+                    </div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon btn-light-danger p-2" role="button" href="clipping.html"><img src="assets/img/icon-20.png?h=dbfd2e472a7150133b6640a6fbb2df5e"><span class="d-none d-xxl-inline-block ms-xl-2">Clipping</span></a><!-- End: Button Icon Theme -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header><!-- End: Header Section -->
+    <div class="modal left-sidebar" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-medium">Filtrar y ordenar</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row">
+                        <div class="col-6 border-end border-bottom py-3">
+                            <h5 class="fw-medium">Fechas</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="dates"><label class="form-check-label" for="formCheck-1">Hoy</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="dates"><label class="form-check-label" for="formCheck-2">Últimas 48 horas</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-5" name="dates"><label class="form-check-label" for="formCheck-5">Últimos 7 días</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" name="dates"><label class="form-check-label" for="formCheck-4">Último mes</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" name="dates"><label class="form-check-label" for="formCheck-3">Último año</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-6" name="dates" checked=""><label class="form-check-label" for="formCheck-6">Todo</label></div>
+                        </div>
+                        <div class="col-6 border-bottom py-3">
+                            <h5 class="fw-medium">Fechas</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-7" name="watch" checked=""><label class="form-check-label" for="formCheck-7">Todos/as</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-8" name="watch"><label class="form-check-label" for="formCheck-8">Solo marcas</label></div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Ordenar</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-9" name="organize"><label class="form-check-label" for="formCheck-9">Nuevos primero</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-10" name="organize" checked=""><label class="form-check-label" for="formCheck-10">Antiguos primero</label></div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Lujo</h5>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11" name="luxury" checked=""><label class="form-check-label" for="formCheck-11">Alta Costura</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-14" name="luxury"><label class="form-check-label" for="formCheck-14">Automoción</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-13" name="luxury"><label class="form-check-label" for="formCheck-13">Decoración</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12" name="luxury"><label class="form-check-label" for="formCheck-12">Económico</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-17" name="luxury"><label class="form-check-label" for="formCheck-17">Ferias</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-16" name="luxury"><label class="form-check-label" for="formCheck-16">Gourmet</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-15" name="luxury"><label class="form-check-label" for="formCheck-15">Joyería</label></div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-18" name="luxury"><label class="form-check-label" for="formCheck-18">Moda</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-19" name="luxury"><label class="form-check-label" for="formCheck-19">Ocio</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-20" name="luxury"><label class="form-check-label" for="formCheck-20">Patrocinio</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-21" name="luxury"><label class="form-check-label" for="formCheck-21">Relojería</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-22" name="luxury"><label class="form-check-label" for="formCheck-22">Solidaridad</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-23" name="luxury"><label class="form-check-label" for="formCheck-23">Tecnología</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-24" name="luxury"><label class="form-check-label" for="formCheck-24">Viajes</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Belleza</h5>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-25" name="beauty" checked=""><label class="form-check-label" for="formCheck-25">Salón Look</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-26" name="beauty"><label class="form-check-label" for="formCheck-26">STANPA</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-27" name="beauty"><label class="form-check-label" for="formCheck-27">Aparatología Uso Doméstico</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-28" name="beauty"><label class="form-check-label" for="formCheck-28">Canal – Dermofarmacia</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-29" name="beauty"><label class="form-check-label" for="formCheck-29">Canal - Estética / SPA</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-30" name="beauty"><label class="form-check-label" for="formCheck-30">Canal – Lujo</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-31" name="beauty"><label class="form-check-label" for="formCheck-31">Canal - Mass Market</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-44" name="beauty"><label class="form-check-label" for="formCheck-44">Canal - Peluquería profesional</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-43" name="beauty"><label class="form-check-label" for="formCheck-43">Cosmética Bio</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-42" name="beauty"><label class="form-check-label" for="formCheck-42">Cosmética Masculina</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-41" name="beauty"><label class="form-check-label" for="formCheck-41">Cuidado Personal</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-40" name="beauty"><label class="form-check-label" for="formCheck-40">Cuidado y Tratamiento Corporal</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-39" name="beauty"><label class="form-check-label" for="formCheck-39">Cuidado y Tratamiento del Cabello</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-38" name="beauty"><label class="form-check-label" for="formCheck-38">Cuidado y Tratamiento Facial</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-37" name="beauty"><label class="form-check-label" for="formCheck-37">Ferias y Eventos</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-36" name="beauty"><label class="form-check-label" for="formCheck-36">Información corporativa</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-35" name="beauty"><label class="form-check-label" for="formCheck-35">Maquillaje y Color</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-34" name="beauty"><label class="form-check-label" for="formCheck-34">Nutricosmética</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-33" name="beauty"><label class="form-check-label" for="formCheck-33">Perfumes y Fragancias</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-32" name="beauty"><label class="form-check-label" for="formCheck-32">Protección Solar</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-48" name="beauty"><label class="form-check-label" for="formCheck-48">Publicaciones</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-47" name="beauty"><label class="form-check-label" for="formCheck-47">Salud dental</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-46" name="beauty"><label class="form-check-label" for="formCheck-46">Tecnología</label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-none"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal right-sidebar" role="dialog" tabindex="-1" id="modal-2">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <h4 class="modal-title fw-medium">Todas las marcas</h4>
+                    <ul class="nav nav-tabs flex-column nav-justified border-white position-absolute px-3 py-2" id="main-menu">
+                        <li class="nav-item"><a class="nav-link active menu-item" href="#section-a">A</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-b">B</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-c">C</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-d">d</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-e">e</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-f">f</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-g">g</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-h">h</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-i">i</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-j">j</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-k">k</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-l">l</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-m">m</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-n">n</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-o">o</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-p">p</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-q">q</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-r">r</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-s">s</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-t">t</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-u">u</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-v">v</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-w">w</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-x">x</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-y">y</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-z">z</a></li>
+                    </ul><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body scroll-container pt-0">
+                    <div class="pe-5 pt-2">
+                        <section id="section-a" class="scrollspy">
+                            <div class="text-uppercase"><span class="text-white bg-dark d-inline-flex justify-content-center align-items-center letter">A</span></div>
+                            <p class="text-uppercase mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="text-uppercase mb-1">ABRINES</p>
+                            <p class="text-uppercase mb-1">ACME</p>
+                            <p class="text-uppercase mb-1">ACQUA DI PARMA X FILA</p>
+                            <p class="text-uppercase mb-1">ADRIANO MAGALHÃES (Marcolino Relojoeiro)</p>
+                            <p class="text-uppercase mb-1">AGAPÉ STUDIO</p>
+                            <p class="text-uppercase mb-1">AGATHA PARIS</p>
+                            <p class="text-uppercase mb-1">AIMÉ LEÓN DORE</p>
+                            <p class="text-uppercase mb-1">ALEMANA</p>
+                            <p class="text-uppercase mb-1">ALEXAH</p>
+                            <p class="text-uppercase mb-1">ALICIA RUEDA</p>
+                            <p class="text-uppercase mb-1">ALLURE MEDIA</p>
+                            <p class="text-uppercase mb-1">ALOHAS</p>
+                            <p class="text-uppercase mb-1">ALOJA EXPERIENCE</p>
+                            <p class="text-uppercase mb-1">ALPINA</p>
+                            <p class="text-uppercase mb-1">ALVARO OLIVARES</p>
+                            <p class="text-uppercase mb-1">AMÁRE BEACH HOTEL MARBELLA</p>
+                            <p class="text-uppercase mb-1">AMAYA JOYEROS</p>
+                            <p class="text-uppercase mb-1">AMAZON FASHION</p>
+                            <p class="text-uppercase mb-1">AMBROSIO PEREZ</p>
+                            <p class="text-uppercase mb-1">ANA ROSA</p>
+                            <p class="text-uppercase mb-1">ANDLIGHT</p>
+                            <p class="text-uppercase mb-1">ANDRÉS ACOSTA</p>
+                            <p class="text-uppercase mb-1">ANDREU CARULLA</p>
+                            <p class="text-uppercase mb-1">ANIZ</p>
+                            <p class="text-uppercase mb-1">ANTIGUA</p>
+                            <p class="text-uppercase mb-1">ANTONIO DIAMOND</p>
+                            <p class="text-uppercase mb-1">ANTONY MORATO</p>
+                            <p class="text-uppercase mb-1">APPLE</p>
+                            <p class="text-uppercase mb-1">ARISTOCRAZY</p>
+                            <p class="text-uppercase mb-1">ART NOUVEAU</p>
+                            <p class="text-uppercase mb-1">ARTURO SORIA PLAZA</p>
+                            <p class="text-uppercase mb-1">ASTON MARTIN</p>
+                            <p class="text-uppercase mb-1">ATELIER COUTURE</p>
+                        </section>
+                        <section id="section-b" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">B</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-c" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">C</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-d" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">d</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-e" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">e</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-f" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">f</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-g" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">g</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-h" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">h</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-i" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">i</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-j" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">j</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-k" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">k</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-l" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">l</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-m" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">m</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-n" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">n</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-o" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">o</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-p" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">p</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-q" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">q</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-r" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">r</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-s" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">s</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-t" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">t</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-u" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">u</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-v" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">v</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-w" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">w</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-x" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">x</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-y" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">y</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-z" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">z</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal-footer d-none"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <div class="mx-auto pb-lg-5" style="max-width: 1383px;">
+                <div class="row gx-lg-2">
+                    <div class="col-12 col-lg-3 pt-lg-4">
+                        <div class="card bg-light border-white border rounded-0 article">
+                            <div class="d-lg-flex flex-lg-column-reverse"><img class="border rounded-0 border-0 border-dark w-100" src="assets/img/img-11.png?h=72e7672cc45670acf2f56808995f9a2f">
+                                <div>
+                                    <h6 class="text-white bg-dark fw-normal mb-0 p-3">ESPRIT | 01/08/2022</h6>
+                                </div>
+                            </div>
+                            <div class="bg-light px-2">
+                                <h6 style="border-bottom: 1px dashed #CBCBCB;" class="py-2">Contactos PR</h6>
+                                <div class="row py-3" style="border-bottom: 1px dashed #CBCBCB;">
+                                    <div class="col-12 col-lg-4 align-self-center"><img class="rounded-circle img-fluid" src="assets/img/Group%20346.png?h=fc02997ff03f881bc2def8b7f13e0074"></div>
+                                    <div class="col-12 col-lg-8"><img src="assets/img/icon-22.png?h=214c5daac1d350fc11d03c6b68901362">
+                                        <p class="fs-12 mb-0">Inmaculada Reina Inmaculada.Reina@merlinprop.com</p><!-- Start: Social Icons List -->
+                                        <ul id="social-list" class="list-unstyled d-flex mb-0">
+                                            <li><a href="#"><img src="assets/img/linkedin.png?h=4f5e410967eee2443fe4a2a49d2fb894"></a></li>
+                                        </ul><!-- End: Social Icons List -->
+                                    </div>
+                                </div>
+                                <div class="row py-3" style="border-bottom: 1px dashed #CBCBCB;">
+                                    <div class="col-12 col-lg-4 align-self-center"><img class="rounded-circle img-fluid" src="assets/img/Group%20244.png?h=879251a7df51682b2242a4d2c55cc89c"></div>
+                                    <div class="col-12 col-lg-8"><img src="assets/img/icon-22.png?h=214c5daac1d350fc11d03c6b68901362">
+                                        <p class="fs-12 mb-0">Inmaculada Reina Inmaculada.Reina@merlinprop.com</p><!-- Start: Social Icons List -->
+                                        <ul id="social-list-2" class="list-unstyled d-flex mb-0">
+                                            <li><a href="#"><img src="assets/img/linkedin.png?h=4f5e410967eee2443fe4a2a49d2fb894"></a></li>
+                                        </ul><!-- End: Social Icons List -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white px-2">
+                                <div class="row py-3" style="border-bottom: 1px dashed #CBCBCB;">
+                                    <div class="col-12 col-lg-4 align-self-center"><img class="img-fluid" src="assets/img/img-31.png?h=36fb1216e6e0bfca7997c936b23ae0e5"></div>
+                                    <div class="col-12 col-lg-8">
+                                        <p class="fs-12 mb-0">ESPRIT</p>
+                                        <p class="fs-12 mb-0">haragon@finallypress.com https://www.esprit.es</p><!-- Start: Social Icons List -->
+                                        <ul id="social-list-1" class="list-unstyled d-flex mb-0">
+                                            <li><a href="#"><img src="assets/img/linkedin.png?h=4f5e410967eee2443fe4a2a49d2fb894"></a></li>
+                                            <li><a href="#"><img src="assets/img/twitter.png?h=841f48c36c1762df4e779dafc760f488"></a></li>
+                                            <li><a href="#"><img src="assets/img/instagram.png?h=21516d0c2e68c5c8724200ed4afa2a53"></a></li>
+                                        </ul><!-- End: Social Icons List -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-lg-4 pe-lg-4">
+                        <h4 class="text-capitalize mb-3">UN HOMENAJE A ESCALA 1:1 DE LEGO TECHNIC AL LAMBORGHINI SIÁN FKP 37</h4>
+                        <p class="fs-12">Una réplica del Sián FKP 37 construida con más de 400.000 piezas recubiertas de pintura Lamborghini estará expuesta en el museo de Sant’Agata Bolognese.<br><br>Desde hoy hasta el 6 de octubre, un Lamborghini Sián[1] FKP 37 único, fabricado con más de 400.000 piezas de LEGO® Technic™, estará expuesto en el Museo Automobili Lamborghini de Sant’Agata Bolognese.&nbsp;LEGO Group y Lamborghini llevan varios años colaborando y esta iniciativa subraya sus valores comunes: “valentía, autenticidad e imprevisibilidad”<br><br>Después del lanzamiento del Lamborghini Sián FKP 37 LEGO® Technic™ a escala 1:8 en 2020, este modelo a tamaño real reproduce el diseño visionario del deportivo italiano de edición limitada en una escala mucho mayor. Se han utilizado más de 154 tipos de piezas LEGO para garantizar que el modelo plasma la sofisticación futurista y reproduce la inconfundible silueta del Lamborghini Sián teniendo en cuenta hasta el más mínimo detalle.<br><br>Lena Dixen, Senior Vice President of Products and Marketing de LEGO Group, declara: “A nuestros diseñadores les encantan los desafíos, así que os podéis imaginar lo contentos que estaban cuando les pedimos que trabajaran en este modelo y que vieran las cosas de una forma un poco más grande de lo habitual. Ellos pudieron trabajar con los diseñadores e ingenieros increíbles de nuestro taller de producción en la fábrica de Kladno, en la República Checa, que se encarga de construir estos impresionantes modelos a escala real y que llevan más allá los límites de lo que se puede hacer con LEGO Technic. Gracias a la creatividad que permite el sistema, han podido hacer justicia al excepcional diseño del Lamborghini Sián FKP 37 LEGO Technic”.<br><br>En este segundo proyecto conjunto para los talentosos diseñadores, ingenieros y técnicos de las dos empresas, el modelo tiene exactamente las mismas dimensiones que el Lamborghini Sián FKP 37, hasta el último milímetro: el chasis, perfectamente proporcionado, está cubierto con piezas LEGO Technic hexagonales y hechas a medida, que se interconectan y forman una carcasa que rebosa energía. El diseño rinde homenaje a la forma de seis lados que desempeña un papel clave en el enfoque de Lamborghini, recordando los icónicos faros traseros hexagonales y la forma del escape del deportivo italiano.<br><br>“Después de más de un año de espera, el Lamborghini Sián de LEGO Technic se expone en el Museo Automobili Lamborghini. Es el lugar natural de los superdeportivos de Lamborghini que han dado forma a sueños y sensaciones gracias a la innovación y a la tecnología. Esta maqueta a escala 1:1 del Sián demuestra que Lamborghini – al igual que Lego Group – considera que los retos forman parte de su alma, que la tecnología es un medio de creación y el diseño un eje que puede y debe dejar sin aliento a las personas”, declara Federico Foschini, Chief Marketing and Sales Officer de Automobili Lamborghini.<br><br>En el exterior, el diseño del Lamborghini Sián ha sido reproducido con la máxima atención al detalle. La palabra Sián significa “relámpago” o “rayo” en dialecto boloñés. Los expertos de LEGO Group lo han subrayado haciendo que las luces y el elegante rayo brillen como lo hacen las luces en forma de “Y” del Sián real, al tiempo que han fabricado unas ópticas traseras en forma hexagonal que pueden encenderse y apagarse en realidad.<br><br>En el interior del vehículo se pueden apreciar detalles extremadamente precisos, como un volante hecho por piezas LEGO y decorado con la famosa insignia de Lamborghini con la bandera italiana, un panel de instrumentos y asientos de competición.<br><br>Este es el primer modelo a gran escala de LEGO Group que cuenta con un revestimiento de color UV con efecto de pintura, que ayudará a que el modelo sea más duradero. El color coincide perfectamente con el tono del modelo LEGO Technic a escala 1:8 y fue aplicado por el taller de pintura de Lamborghini para garantizar que el deportivo tuviera un acabado adecuado.<br><br>Cifras y datos del Lamborghini Sián FKP 37 LEGO® Technic™ a escala real:<br><br>Se han utilizado más de 400.000 piezas LEGO® Technic en total.<br><br>Se han utilizado 154 tipos diferentes de piezas LEGO Technic, entre ellas 20 que fueron moldeadas específicamente para este modelo<br><br>Peso total: 2.200 kg<br><br>El proceso de desarrollo y construcción ha durado un total de 8.660 horas:<br><br>5.370 horas de desarrollo<br><br>3.290 horas de producción<br><br>Ha sido creado por 15 especialistas en diseño, ingeniería y construcción del equipo de LEGO en Kladno (República Checa).<br><br>Las dimensiones del modelo son exactamente las mismas que las del vehículo real: 4.980 mm de longitud, 2.101 mm de anchura y 1.133 mm de altura,<br><br>Las luces delantera y traseras funcionan y están fabricadas completamente con piezas de LEGO Technic<br><br>Por primera vez, un modelo LEGO ha recibido un revestimiento con efecto de pintura, utilizando la pintura oficial de Automobili Lamborghini.<br><br>Por primera vez, las líneas icónicas del diseño de un modelo a escala real se han iluminado para rendir homenaje a las curvas visionarias y la forma futurista del vehículo real, que es enormemente popular entre los coches deportivos de todo el mundo.<br><br>Por primera vez, se ha utilizado una forma hexagonal para crear la carcasa exterior de un modelo, rindiendo así homenaje a la historia del diseño del Lamborghini Sián FKP 37, que se ha inspirado fuertemente en esta silueta.</p>
+                        <div class="d-grid d-lg-inline-block"><button class="btn border rounded border-dark d-inline-flex justify-content-center align-items-center px-5" type="button"><img src="assets/img/copy.png?h=3a10d64190fc6f37b64c07d9f49f63fd" class="me-2" style="width: 20px;height: 22px;">Copiar Texto</button></div>
+                        <hr style="border-style: dashed;">
+                        <p class="fs-12 mb-1">Medios Disponibles</p>
+                        <p class="fs-12">(*) Los audiovisuales son para uso editorial y no para fines promocionales.</p>
+                        <div class="bg-light d-flex justify-content-between align-items-center p-2">
+                            <div class="d-inline-flex align-items-end p-2"><img src="assets/img/icon-6.png?h=6b863d32b0051f60cad4288d8b1d9f66" style="width: 24px;height: 24px;" class="me-2">
+                                <p class="mb-0">Nota de prensa</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2 mt-2 mb-2">
+                            <div class="col">
+                                <div class="d-flex align-items-end p-2 ps-4"><img src="assets/img/img-32.png?h=cac2ba09c1d19e1ffdeca617420b5066" style="width: 40px;height: 50px;" class="me-2">
+                                    <p class="mb-0">NdP_ESPRIT_LetLoose.pdf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light d-flex justify-content-between align-items-center p-2">
+                            <div class="d-inline-flex align-items-end p-2"><img src="assets/img/icon-7.png?h=8409763a7109d503858d924e392cfab2" style="width: 24px;height: 24px;" class="me-2">
+                                <p class="mb-0">Imágenes</p>
+                            </div>
+                            <div class="d-inline-flex align-items-end"><button class="btn border rounded border-dark d-inline-flex justify-content-center align-items-center btn-white px-3" type="button"><img src="assets/img/upload.png?h=25f31e32d293bb26b03e3cca9f00ea67" class="me-2" style="width: 20px;height: 22px;">Descargar todo</button></div>
+                        </div>
+                        <div class="row gy-4 row-cols-2 row-cols-lg-3 row-cols-xxl-4 mt-2 mb-2">
+                            <div class="col">
+                                <div class="text-center align-items-end"><img class="img-fluid w-75" src="assets/img/img-10.png?h=c024e1573b5fec8f5ca8564df156ddfe"></div>
+                                <p class="text-center fs-12 my-1"><img class="me-1" src="assets/img/upload.png?h=25f31e32d293bb26b03e3cca9f00ea67" style="width: 16px;height: 16px;">1891x2362px:3,79 MB</p>
+                                <p class="text-center fs-12 my-1"><img class="me-1" src="assets/img/upload.png?h=25f31e32d293bb26b03e3cca9f00ea67" style="width: 16px;height: 16px;">945x1180px:0,97 MB</p>
+                            </div>
+                        </div>
+                        <div class="bg-light d-flex justify-content-between align-items-center p-2">
+                            <div class="d-inline-flex align-items-end p-2"><img src="assets/img/icon-7.png?h=8409763a7109d503858d924e392cfab2" style="width: 24px;height: 24px;" class="me-2">
+                                <p class="mb-0">Vídeos</p>
+                            </div>
+                            <div class="d-inline-flex align-items-end"><button class="btn border rounded border-dark d-inline-flex justify-content-center align-items-center btn-white px-3" type="button"><img src="assets/img/upload.png?h=25f31e32d293bb26b03e3cca9f00ea67" class="me-2" style="width: 20px;height: 22px;">Descargar todo</button></div>
+                        </div>
+                        <div class="row gy-4 row-cols-2 row-cols-lg-3 row-cols-xxl-4 mt-2 mb-2">
+                            <div class="col">
+                                <div class="text-center align-items-end"><img class="img-fluid" src="assets/img/img-33.png?h=b1b61ef30e07612ac4a59a4fa7242d90"></div>
+                                <p class="text-center fs-12 my-1"><img class="me-1" src="assets/img/upload.png?h=25f31e32d293bb26b03e3cca9f00ea67" style="width: 16px;height: 16px;">1920x1080px:690,3 MB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 pt-lg-4 px-xxl-5">
+                        <div>
+                            <div>
+                                <div>
+                                    <h6 class="text-white bg-dark fw-normal mb-0 p-3">Comunicados relacionados</h6>
+                                </div><img class="border rounded-0 border-0 border-dark w-100" src="assets/img/Image%2095.png?h=d5c878a54f322a13e6011dfb6b91b133">
+                            </div>
+                            <div class="py-2">
+                                <p class="text-uppercase fs-12 mb-lg-2">ESPRIT PRESENTA SU NUEVA COLECCIÓN Y CAMPAÑA PRIMAVERA-VERANO 2022: “CREATE JOY”</p>
+                                <p class="fs-12 mb-lg-2">Love more. Make memories. Live bold. Shine bright. Create joy.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div></div><img class="border rounded-0 border-0 border-dark w-100" src="assets/img/Image%2096.png?h=0dad84579df5a809f34b02adab37a744">
+                            </div>
+                            <div class="py-2">
+                                <p class="text-uppercase fs-12 mb-lg-2">ESPRIT PRESENTA SU CAMPAÑA PARA ESTA NAVIDAD</p>
+                                <p class="fs-12 mb-lg-2">Estas fiestas, Esprit cuenta con los más prestigiosos expertos para la creación de su campaña de Navidad #asktheexperts: los niños. A través de su mirada, el mundo parece más mágico.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div></div><img class="border rounded-0 border-0 border-dark w-100" src="assets/img/Image%2097.png?h=f13bce2f72d9fa66476ee2706c039f99">
+                            </div>
+                            <div class="py-2">
+                                <p class="text-uppercase fs-12 mb-lg-2">ESPRIT DA UN PASO MÁS EN SU EXPANSIÓN EN ESPAÑA CON LA APERTURA DE LOS 5 PRIMEROS CORNERS DE SU LÍNEA EDC EN EL CORTE INGLÉS</p>
+                                <p class="fs-12 mb-lg-2">Con estos 5 primeros puntos de venta de EDC en El Corte Inglés, Esprit refuerza su posicionamiento en nuestro país.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- Start: Footer -->
+    <footer class="bg-dark py-4" id="footer">
+        <div class="container-fluid">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <!-- Start: Footer Navbar -->
+                <ul class="nav nav-tabs flex-column flex-md-row fs-12 mb-5 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Aviso Legal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Política de Privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Política de Cookies</a></li>
+                </ul><!-- End: Footer Navbar -->
+                <p class="text-white fs-12 mb-0 px-2">©2022 The NewsRoom</p>
+            </div>
+        </div>
+    </footer><!-- End: Footer -->
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399"></script>
+    <script src="assets/js/script.min.js?h=efa0f89c5cf1f2e2748d3c56eb14036f"></script>
+</body>
+
+</html>

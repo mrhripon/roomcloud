@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>The New Room Cloud</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=f1a8fe9e98944b9d682ec5c3efac8f17">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=54e47069b98dabba4f985ae666b49ea6">
+</head>
+
+<body>
+    <!-- Start: Header Section -->
+    <header class="bg-white" id="header-2">
+        <nav class="custom-navbar" style="border-bottom: 1px solid #CBCBCB;">
+            <div class="d-flex align-items-center py-3 py-lg-4 ps-3">
+                <!-- Start: Navbar Logo --><a class="navbar-brand py-0 me-3" href="#"><img src="assets/img/logo.svg?h=0c5e83ea73e8a8f261730e058bed418f"></a><!-- End: Navbar Logo -->
+            </div>
+            <div class="d-flex align-items-center py-3 py-lg-4">
+                <!-- Start: Navbar Search -->
+                <form class="flex-grow-1 navbar-search"><input class="form-control" type="search" placeholder="Busca entre miles de comunicados, imágenes y vídeos"><img class="position-absolute" src="assets/img/magnifying-glass.png?h=87152335a85bda0b7605ca3c6d14f785"></form><!-- End: Navbar Search --><span class="d-none d-lg-inline-block v-line mx-4"></span>
+            </div>
+            <div class="d-lg-flex justify-content-lg-end align-items-lg-center py-3 py-lg-4 pe-3">
+                <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon btn-avatar p-2 me-2 ms-2" role="button" id="btn-avatar"><span class="text-nowrap d-none d-xl-inline-block">Yolanda Sacristán</span><img class="rounded-circle ms-xl-2" src="assets/img/avatar.png?h=51c32f6d39107a2efda675082995c643"></a><!-- End: Button Icon Theme -->
+                <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon p-2" role="button" id="btn-logout" href="index.html"><img src="assets/img/icon-19.png?h=ab1c5b16dbf502a8ede674c3e5fb35c1" class="me-xl-2"><span class="d-none d-xl-inline-block">Salir</span></a><!-- End: Button Icon Theme -->
+            </div>
+            <div class="d-block d-md-none justify-content-between align-items-center px-3">
+                <div class="d-flex align-items-center">
+                    <!-- Start: Button Icon Theme --><button class="btn d-inline-flex align-items-center btn-icon p-2" id="btn-filter" type="button" data-bs-toggle="modal" data-bs-target="#modal-1"><img src="assets/img/filter.png?h=a54d9ba2ba030f10230720693e30f94f"><span class="d-none d-xl-inline-block ms-xl-2">Filtrar y ordenar</span></button><!-- End: Button Icon Theme --><span class="v-line mx-3"></span><!-- Start: Badge Theme --><span class="badge bg-light text-body d-none d-lg-inline-flex align-items-center custom-badge ff-itc-fgs"><img class="me-1" src="assets/img/cross.png?h=fa0d9561d5a6271f5b2c80bf77c3c093">Nuevos Primero</span><!-- End: Badge Theme -->
+                </div>
+            </div>
+            <div class="d-lg-flex align-items-lg-center py-lg-4">
+                <div class="d-flex justify-content-between align-items-center justify-content-lg-start">
+                    <div class="flex-grow-1 flex-lg-grow-0"><select class="form-select form-select-icon custom-select">
+                            <option value="" selected="">Todo</option>
+                            <option value="" selected="">Comunicados</option>
+                            <option value="">Imágenes</option>
+                            <option value="">Vídeos</option>
+                        </select></div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><button class="btn btn-light d-inline-flex align-items-center btn-icon p-2 mx-2" type="button" data-bs-toggle="modal" data-bs-target="#modal-2"><img src="assets/img/icon-17.png?h=37d1f9d7523495177b497e03e4a10c3d"><span class="d-none d-xxl-inline-block ms-xl-2">Marcas</span></button><!-- End: Button Icon Theme -->
+                    </div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><button class="btn btn-light d-inline-flex align-items-center btn-icon p-2 me-2" type="button"><img src="assets/img/gear.png?h=8866fd6505bd825ed530c2f0ad941a49"><span class="d-none d-xxl-inline-block ms-xl-2">Búsqueda Avanzada</span></button><!-- End: Button Icon Theme -->
+                    </div>
+                    <div>
+                        <!-- Start: Button Icon Theme --><a class="btn d-inline-flex align-items-center btn-icon btn-light-danger p-2" role="button" href="clipping.html"><img src="assets/img/icon-20.png?h=dbfd2e472a7150133b6640a6fbb2df5e"><span class="d-none d-xxl-inline-block ms-xl-2">Clipping</span></a><!-- End: Button Icon Theme -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header><!-- End: Header Section -->
+    <div class="modal left-sidebar" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-medium">Filtrar y ordenar</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row">
+                        <div class="col-6 border-end border-bottom py-3">
+                            <h5 class="fw-medium">Fechas</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="dates"><label class="form-check-label" for="formCheck-1">Hoy</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="dates"><label class="form-check-label" for="formCheck-2">Últimas 48 horas</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-5" name="dates"><label class="form-check-label" for="formCheck-5">Últimos 7 días</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" name="dates"><label class="form-check-label" for="formCheck-4">Último mes</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" name="dates"><label class="form-check-label" for="formCheck-3">Último año</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-6" name="dates" checked=""><label class="form-check-label" for="formCheck-6">Todo</label></div>
+                        </div>
+                        <div class="col-6 border-bottom py-3">
+                            <h5 class="fw-medium">Fechas</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-7" name="watch" checked=""><label class="form-check-label" for="formCheck-7">Todos/as</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-8" name="watch"><label class="form-check-label" for="formCheck-8">Solo marcas</label></div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Ordenar</h5>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-9" name="organize"><label class="form-check-label" for="formCheck-9">Nuevos primero</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-10" name="organize" checked=""><label class="form-check-label" for="formCheck-10">Antiguos primero</label></div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Lujo</h5>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11" name="luxury" checked=""><label class="form-check-label" for="formCheck-11">Alta Costura</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-14" name="luxury"><label class="form-check-label" for="formCheck-14">Automoción</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-13" name="luxury"><label class="form-check-label" for="formCheck-13">Decoración</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12" name="luxury"><label class="form-check-label" for="formCheck-12">Económico</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-17" name="luxury"><label class="form-check-label" for="formCheck-17">Ferias</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-16" name="luxury"><label class="form-check-label" for="formCheck-16">Gourmet</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-15" name="luxury"><label class="form-check-label" for="formCheck-15">Joyería</label></div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-18" name="luxury"><label class="form-check-label" for="formCheck-18">Moda</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-19" name="luxury"><label class="form-check-label" for="formCheck-19">Ocio</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-20" name="luxury"><label class="form-check-label" for="formCheck-20">Patrocinio</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-21" name="luxury"><label class="form-check-label" for="formCheck-21">Relojería</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-22" name="luxury"><label class="form-check-label" for="formCheck-22">Solidaridad</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-23" name="luxury"><label class="form-check-label" for="formCheck-23">Tecnología</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-24" name="luxury"><label class="form-check-label" for="formCheck-24">Viajes</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 border-bottom py-3">
+                            <h5 class="fw-medium">Belleza</h5>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-25" name="beauty" checked=""><label class="form-check-label" for="formCheck-25">Salón Look</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-26" name="beauty"><label class="form-check-label" for="formCheck-26">STANPA</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-27" name="beauty"><label class="form-check-label" for="formCheck-27">Aparatología Uso Doméstico</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-28" name="beauty"><label class="form-check-label" for="formCheck-28">Canal – Dermofarmacia</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-29" name="beauty"><label class="form-check-label" for="formCheck-29">Canal - Estética / SPA</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-30" name="beauty"><label class="form-check-label" for="formCheck-30">Canal – Lujo</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-31" name="beauty"><label class="form-check-label" for="formCheck-31">Canal - Mass Market</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-44" name="beauty"><label class="form-check-label" for="formCheck-44">Canal - Peluquería profesional</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-43" name="beauty"><label class="form-check-label" for="formCheck-43">Cosmética Bio</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-42" name="beauty"><label class="form-check-label" for="formCheck-42">Cosmética Masculina</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-41" name="beauty"><label class="form-check-label" for="formCheck-41">Cuidado Personal</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-40" name="beauty"><label class="form-check-label" for="formCheck-40">Cuidado y Tratamiento Corporal</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-39" name="beauty"><label class="form-check-label" for="formCheck-39">Cuidado y Tratamiento del Cabello</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-38" name="beauty"><label class="form-check-label" for="formCheck-38">Cuidado y Tratamiento Facial</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-37" name="beauty"><label class="form-check-label" for="formCheck-37">Ferias y Eventos</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-36" name="beauty"><label class="form-check-label" for="formCheck-36">Información corporativa</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-35" name="beauty"><label class="form-check-label" for="formCheck-35">Maquillaje y Color</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-34" name="beauty"><label class="form-check-label" for="formCheck-34">Nutricosmética</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-33" name="beauty"><label class="form-check-label" for="formCheck-33">Perfumes y Fragancias</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-32" name="beauty"><label class="form-check-label" for="formCheck-32">Protección Solar</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-48" name="beauty"><label class="form-check-label" for="formCheck-48">Publicaciones</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-47" name="beauty"><label class="form-check-label" for="formCheck-47">Salud dental</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-46" name="beauty"><label class="form-check-label" for="formCheck-46">Tecnología</label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-none"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal right-sidebar" role="dialog" tabindex="-1" id="modal-2">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header position-relative">
+                    <h4 class="modal-title fw-medium">Todas las marcas</h4>
+                    <ul class="nav nav-tabs flex-column nav-justified border-white position-absolute px-3 py-2" id="main-menu">
+                        <li class="nav-item"><a class="nav-link active menu-item" href="#section-a">A</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-b">B</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-c">C</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-d">d</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-e">e</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-f">f</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-g">g</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-h">h</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-i">i</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-j">j</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-k">k</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-l">l</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-m">m</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-n">n</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-o">o</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-p">p</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-q">q</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-r">r</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-s">s</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-t">t</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-u">u</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-v">v</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-w">w</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-x">x</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-y">y</a></li>
+                        <li class="nav-item"><a class="nav-link menu-item" href="#section-z">z</a></li>
+                    </ul><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body scroll-container pt-0">
+                    <div class="pe-5 pt-2">
+                        <section id="section-a" class="scrollspy">
+                            <div class="text-uppercase"><span class="text-white bg-dark d-inline-flex justify-content-center align-items-center letter">A</span></div>
+                            <p class="text-uppercase mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="text-uppercase mb-1">ABRINES</p>
+                            <p class="text-uppercase mb-1">ACME</p>
+                            <p class="text-uppercase mb-1">ACQUA DI PARMA X FILA</p>
+                            <p class="text-uppercase mb-1">ADRIANO MAGALHÃES (Marcolino Relojoeiro)</p>
+                            <p class="text-uppercase mb-1">AGAPÉ STUDIO</p>
+                            <p class="text-uppercase mb-1">AGATHA PARIS</p>
+                            <p class="text-uppercase mb-1">AIMÉ LEÓN DORE</p>
+                            <p class="text-uppercase mb-1">ALEMANA</p>
+                            <p class="text-uppercase mb-1">ALEXAH</p>
+                            <p class="text-uppercase mb-1">ALICIA RUEDA</p>
+                            <p class="text-uppercase mb-1">ALLURE MEDIA</p>
+                            <p class="text-uppercase mb-1">ALOHAS</p>
+                            <p class="text-uppercase mb-1">ALOJA EXPERIENCE</p>
+                            <p class="text-uppercase mb-1">ALPINA</p>
+                            <p class="text-uppercase mb-1">ALVARO OLIVARES</p>
+                            <p class="text-uppercase mb-1">AMÁRE BEACH HOTEL MARBELLA</p>
+                            <p class="text-uppercase mb-1">AMAYA JOYEROS</p>
+                            <p class="text-uppercase mb-1">AMAZON FASHION</p>
+                            <p class="text-uppercase mb-1">AMBROSIO PEREZ</p>
+                            <p class="text-uppercase mb-1">ANA ROSA</p>
+                            <p class="text-uppercase mb-1">ANDLIGHT</p>
+                            <p class="text-uppercase mb-1">ANDRÉS ACOSTA</p>
+                            <p class="text-uppercase mb-1">ANDREU CARULLA</p>
+                            <p class="text-uppercase mb-1">ANIZ</p>
+                            <p class="text-uppercase mb-1">ANTIGUA</p>
+                            <p class="text-uppercase mb-1">ANTONIO DIAMOND</p>
+                            <p class="text-uppercase mb-1">ANTONY MORATO</p>
+                            <p class="text-uppercase mb-1">APPLE</p>
+                            <p class="text-uppercase mb-1">ARISTOCRAZY</p>
+                            <p class="text-uppercase mb-1">ART NOUVEAU</p>
+                            <p class="text-uppercase mb-1">ARTURO SORIA PLAZA</p>
+                            <p class="text-uppercase mb-1">ASTON MARTIN</p>
+                            <p class="text-uppercase mb-1">ATELIER COUTURE</p>
+                        </section>
+                        <section id="section-b" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">B</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-c" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">C</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-d" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">d</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-e" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">e</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-f" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">f</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-g" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">g</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-h" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">h</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-i" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">i</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-j" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">j</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-k" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">k</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-l" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">l</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-m" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">m</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-n" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">n</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-o" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">o</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-p" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">p</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-q" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">q</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-r" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">r</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-s" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">s</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-t" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">t</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-u" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">u</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-v" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">v</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-w" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">w</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-x" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">x</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-y" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">y</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                        <section id="section-z" class="scrollspy">
+                            <div><span class="text-uppercase text-white bg-dark d-inline-flex justify-content-center align-items-center letter">z</span></div>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                            <p class="mb-1">A. LANGE &amp; SOHNE</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="modal-footer d-none"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <div class="mx-auto py-lg-5" style="max-width: 1383px;">
+                <!-- Start: Rresponsive Menu -->
+                <div class="responsive-menu">
+                    <div class="responsive-menu-dialog responsive-menu-fullscreen responsive-menu-dialog-scrollable">
+                        <div class="responsive-menu-content">
+                            <div class="responsive-menu-header p-4 p-lg-0">
+                                <h2 class="border-dark ff-baskerville fw-normal border-bottom mb-0 mb-lg-3">Mi Perfil</h2><a class="btn d-inline-flex d-lg-none responsive-menu-btn-dismiss p-2" role="button" href="home-platform.html"><img src="assets/img/cross.png?h=fa0d9561d5a6271f5b2c80bf77c3c093"></a>
+                            </div>
+                            <div class="responsive-menu-body">
+                                <div>
+                                    <form>
+                                        <div class="row gy-2 gx-md-5">
+                                            <div class="col-12 col-lg-2 text-center text-lg-end">
+                                                <!-- Start: Media Counter --><span class="d-inline-block tags-chip profile-avatar position-relative" style="width: auto;height: auto;padding-top: 0;padding-right: 0;"><input class="form-control position-absolute p-0" type="file" id="imgInp" accept="image/*" required=""><img class="rounded-circle" id="blah" src="assets/img/avatar-placeholder.png?h=916746a42e70e3a1198b78a1a35c3f04" alt="Your image"><span class="text-white bg-white border rounded-circle d-inline-flex justify-content-center align-items-center fw-medium chip-close"><img class="img-fluid" src="assets/img/camera.png?h=61d1b9e94f6cc72a3968dcfb260f1697"></span></span><!-- End: Media Counter -->
+                                            </div>
+                                            <div class="col-12 col-lg-10 text-center text-lg-start align-self-lg-center">
+                                                <h4 class="fw-medium mb-0">Yolanda Sacristán</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-2 order-4 order-lg-3">
+                                                <h5 class="text-lg-end fw-medium mb-0">Información Personal</h5>
+                                            </div>
+                                            <div class="col-12 col-lg-5 order-5 order-lg-4">
+                                                <div class="row gy-2 gx-lg-2 gy-lg-0 row-cols-1 row-cols-lg-2">
+                                                    <div class="col">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Nombre (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Apellidos (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-5 order-3 order-lg-5 pb-3">
+                                                <div class="row gx-lg-2">
+                                                    <div class="col">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Cambiar Contraseña</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required="" placeholder="Nueva Contraseña"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div><label class="form-label invisible fs-12 fw-medium mb-1">aaa</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required="" placeholder="Repetir Contraseña"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-2 gx-lg-5">
+                                            <div class="col-12 col-lg-2">
+                                                <h5 class="text-lg-end invisible fw-medium mb-0">YYY</h5>
+                                            </div>
+                                            <div class="col-12 col-lg-5">
+                                                <div class="row gx-lg-2 gy-lg-2 row-cols-1 row-cols-lg-2">
+                                                    <div class="col-12 col-lg-6">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Correo Electrónico (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Teléfono (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="number"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Móvil (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="number"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Dirección Postal (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Localidad (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Código Postal (*)</label>
+                                                            <div class="text-center"><input class="form-control" type="number"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1" for="email">Provincia (*)</label>
+                                                            <div class="text-center"><select class="form-select">
+                                                                    <option value="12" selected=""></option>
+                                                                    <option value="">Madrid</option>
+                                                                    <option value="14">This is item 3</option>
+                                                                </select></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-12">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Medios (*)</label>
+                                                            <div class="row gx-1">
+                                                                <div class="col-8">
+                                                                    <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="d-grid"><button class="btn btn-light" type="button" style="background-color: #E8E8E8;">Añadir Medio</button></div>
+                                                                </div>
+                                                            </div><!-- Start: Badge Theme --><span class="badge bg-light text-body d-inline-flex align-items-center custom-badge ff-itc-fgs me-2" style="background-color: #E8E8E8!important;"><img class="me-1" src="assets/img/cross.png?h=fa0d9561d5a6271f5b2c80bf77c3c093">Freelance</span><!-- End: Badge Theme -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-12">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Puesto de Trabajo</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-5 pb-3">
+                                                <div class="row gx-lg-2 gy-lg-2">
+                                                    <div class="col-12">
+                                                        <!-- Start: Message Textarea -->
+                                                        <div><label class="form-label fs-12 fw-medium mb-1" for="email">CV / Perfil Profesional</label>
+                                                            <div class="text-center"><textarea class="form-control" rows="7"></textarea></div>
+                                                        </div><!-- End: Message Textarea -->
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Twitter</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">LinkedIn</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div><label class="form-label fs-12 fw-medium mb-1">Instagram</label>
+                                                            <div class="text-center"><input class="form-control" type="text" required=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="my-4">
+                                        <div class="row gy-2 gx-lg-5">
+                                            <div class="col-12 col-lg-2">
+                                                <h5 class="text-lg-end fw-medium mb-0">Intereses</h5>
+                                            </div>
+                                            <div class="col-12 col-lg-10">
+                                                <p class="fs-12 mb-4 mb-lg-3">Recibirás un correo electrónico cuando publiquemos notas de prensa relevantes de las categorías que selecciones.</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <h5 class="fw-medium mb-2">Lujo</h5>
+                                                        <div class="row row-cols-2">
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-95" name="luxury" checked=""><label class="form-check-label" for="formCheck-95">Alta costura</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-102" name="luxury" checked=""><label class="form-check-label" for="formCheck-102">Automoción</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-101" name="luxury" checked=""><label class="form-check-label" for="formCheck-101">Decoración</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-100" name="luxury" checked=""><label class="form-check-label" for="formCheck-100">Económico</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-99" name="luxury" checked=""><label class="form-check-label" for="formCheck-99">Ferias</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-98" name="luxury" checked=""><label class="form-check-label" for="formCheck-98">Gourmet</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-97" name="luxury" checked=""><label class="form-check-label" for="formCheck-97">Joyería</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-96" name="luxury" checked=""><label class="form-check-label" for="formCheck-96">Moda</label></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-103" name="luxury" checked=""><label class="form-check-label" for="formCheck-103">Ocio</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-108" name="luxury" checked=""><label class="form-check-label" for="formCheck-108">Patrocinio</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-107" name="luxury" checked=""><label class="form-check-label" for="formCheck-107">Relojería</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-106" name="luxury" checked=""><label class="form-check-label" for="formCheck-106">Solidaridad</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-105" name="luxury" checked=""><label class="form-check-label" for="formCheck-105">Tecnología</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-104" name="luxury" checked=""><label class="form-check-label" for="formCheck-104">Viajes</label></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <h5 class="fw-medium mb-2">Belleza</h5>
+                                                        <div class="row row-cols-1 row-cols-lg-3">
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-109" name="beauty" checked=""><label class="form-check-label" for="formCheck-109">Salón Look</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-110" name="beauty" checked=""><label class="form-check-label" for="formCheck-110">Stanpa</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-111" name="beauty" checked=""><label class="form-check-label" for="formCheck-111">Aparatología Uso Doméstico</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-112" name="beauty" checked=""><label class="form-check-label" for="formCheck-112">Canal - Dermofarmacia</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-113" name="beauty" checked=""><label class="form-check-label" for="formCheck-113">Canal - Estética / Spa</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-114" name="beauty" checked=""><label class="form-check-label" for="formCheck-114"> Canal - Lujo</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-115" name="beauty" checked=""><label class="form-check-label" for="formCheck-115">Canal - Mass Market</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-116" name="beauty" checked=""><label class="form-check-label" for="formCheck-116">Canal - Peluquería Profesional</label></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-117" name="beauty" checked=""><label class="form-check-label" for="formCheck-117">Cosmética Bio</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-118" name="beauty" checked=""><label class="form-check-label" for="formCheck-118">Cosmética Masculina</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-119" name="beauty" checked=""><label class="form-check-label" for="formCheck-119">Cuidado Personal</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-120" name="beauty" checked=""><label class="form-check-label" for="formCheck-120">Cuidado y Tratamiento Corporal</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-121" name="beauty" checked=""><label class="form-check-label" for="formCheck-121">Cuidado y Tratamiento Del Cabello</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-122" name="beauty" checked=""><label class="form-check-label" for="formCheck-122">Cuidado y Tratamiento Facial</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-130" name="beauty" checked=""><label class="form-check-label" for="formCheck-130">Ferias y Eventos</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-129" name="beauty" checked=""><label class="form-check-label" for="formCheck-129">Información Corporativa</label></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-123" name="beauty" checked=""><label class="form-check-label" for="formCheck-123">Maquillaje y Color</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-124" name="beauty" checked=""><label class="form-check-label" for="formCheck-124">Nutricosmética</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-125" name="beauty" checked=""><label class="form-check-label" for="formCheck-125">Perfumes y Fragancias</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-126" name="beauty" checked=""><label class="form-check-label" for="formCheck-126">Protección Solar</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-127" name="beauty" checked=""><label class="form-check-label" for="formCheck-127">Publicaciones</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-128" name="beauty" checked=""><label class="form-check-label" for="formCheck-128">Salud Dental</label></div>
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-131" name="beauty" checked=""><label class="form-check-label" for="formCheck-131">Tecnología</label></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="my-4">
+                                        <div class="row gy-2 gx-lg-5">
+                                            <div class="col-12 col-lg-2">
+                                                <h5 class="text-lg-end fw-medium mb-0">Resumen de Notas de Prensa</h5>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <p class="fs-12 mb-4 mb-lg-3">Selecciona si quieres recibir un resumen diario de comunicados al mediodía y/o por la tarde.</p>
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-8">
+                                                        <div class="row row-cols-2">
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-132" checked=""><label class="form-check-label" for="formCheck-132">Al medio día</label></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-140" checked=""><label class="form-check-label" for="formCheck-140">Por la tarde</label></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-grid mt-2"><button class="btn btn-dark d-flex justify-content-center align-items-center" type="submit"><img src="assets/img/directory.png?h=14660fa4fd9cf4c9ba8f3f4bbc4c2002" class="me-2" style="width: 20px;height: 20px;">Guardar Cambios</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="d-lg-none responsive-menu-footer">
+                                <h4 class="invisible mb-0">Heading</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End: Rresponsive Menu -->
+            </div>
+        </div>
+    </main><!-- Start: Footer -->
+    <footer class="bg-dark py-4" id="footer">
+        <div class="container-fluid">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <!-- Start: Footer Navbar -->
+                <ul class="nav nav-tabs flex-column flex-md-row fs-12 mb-5 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Aviso Legal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Política de Privacidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Política de Cookies</a></li>
+                </ul><!-- End: Footer Navbar -->
+                <p class="text-white fs-12 mb-0 px-2">©2022 The NewsRoom</p>
+            </div>
+        </div>
+    </footer><!-- End: Footer -->
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=01bb7ae0c0b11509558f2aa83f244399"></script>
+    <script src="assets/js/script.min.js?h=efa0f89c5cf1f2e2748d3c56eb14036f"></script>
+    <script src="assets/js/preview-image-upload.min.js?h=0d6d8515ea8257fdc22fc973f93ca8b0"></script>
+</body>
+
+</html>
