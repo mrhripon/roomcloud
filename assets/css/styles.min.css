@@ -1015,6 +1015,34 @@ input:checked+.toggle-button:before {
     margin-bottom: 2px !important;
 }
 
+.color-black {
+    color: #000 !important;
+}
+
+.para .ttl {
+    margin-bottom: .6rem;
+}
+
+.para {
+    margin-bottom: 1rem;
+}
+
+.para p {
+    font-size: .75rem;
+    margin-bottom: 0;
+    line-height: 14px;
+}
+
+.type-1 .col img.img-fluid {
+    margin-bottom: 5px;
+}
+
+.color-blue {
+    color: #000AFF;
+    text-decoration: none;
+    transition: .3s;
+}
+
 @media screen and (max-width: 767px) {
     .adjust-with-field {
         margin-top: 1rem;
