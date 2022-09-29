@@ -1103,6 +1103,14 @@ header #btn-logout {
     margin-bottom: 15px;
 }
 
+.type-1 p {
+    font-size: .73rem !important;
+}
+
+.fn-30 {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 767px) {
     .adjust-with-field {
         margin-top: 1rem;
@@ -1114,6 +1122,10 @@ header #btn-logout {
 
     .ft-part-short {
         padding: 0 16px;
+    }
+
+    .fn-30 {
+        font-size: 20px;
     }
 }
 
