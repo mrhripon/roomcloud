@@ -422,6 +422,9 @@ h4 {
 
 .list-1>li:not(:last-child) {
     border-bottom: 1px solid #d6d6d6;
+}
+
+.list-1>li {
     padding-top: .5rem;
     padding-bottom: .5rem
 }
@@ -1007,6 +1010,10 @@ input:checked+.toggle-button:before {
     color: black;
 }
 
+.type-1 p.text-center {
+    text-align: left !important;
+}
+
 .label-style-one label {
     line-height: 15px;
     font-family: 'ITC Franklin Gothic Std';
@@ -1043,9 +1050,70 @@ input:checked+.toggle-button:before {
     transition: .3s;
 }
 
+header #btn-avatar,
+header #btn-logout {
+    color: #707070;
+}
+
+.custom-navbar div button.btn-icon,
+.custom-navbar div a.btn-icon {
+    font-size: 14px;
+    font-family: 'ITC Franklin Gothic Std';
+    font-weight: 400;
+}
+
+#articles .card-body>div p:first-child {
+    font-weight: 500;
+    font-family: 'ITC Franklin Gothic Std';
+}
+
+.short-fix .p-30 h4 {
+    margin-bottom: 15px;
+}
+
+.dear {
+    margin-bottom: 24px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.rg-info {
+    line-height: 1.6;
+}
+
+.fn-15 {
+    font-size: 15px;
+}
+
+.rg-info a {
+    display: inline-block;
+    color: #000;
+}
+
+.card-style-1 .card-body p:last-child {
+    margin-bottom: 0;
+    max-height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.short-fix h4.text-center.mt-5 {
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 767px) {
     .adjust-with-field {
         margin-top: 1rem;
+    }
+
+    .short-fix .p-30 {
+        padding: 16px;
+    }
+
+    .ft-part-short {
+        padding: 0 16px;
     }
 }
 
