@@ -845,11 +845,11 @@ input.form-control::placeholder {
 #main-menu {
     bottom: 0;
     right: 0;
-    transform: translate(0, 100%);
+    transform: translate(-6px, calc(100% + 14px));
     z-index: 1;
     display: grid;
     grid-template-columns: auto auto;
-    gap: .25rem
+    gap: .25rem;
 }
 
 @media (min-width:992px) {
@@ -1111,6 +1111,32 @@ header #btn-logout {
     font-size: 30px;
 }
 
+.side-scroll-div {
+    max-height: 645px;
+    overflow-y: scroll;
+    border: 1px solid #CBCBCB;
+    padding: 0 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #CBCBCB transparent;
+}
+
+.side-scroll-div::-webkit-scrollbar {
+    width: 6px;
+}
+
+.side-scroll-div::-webkit-scrollbar-thumb {
+    background-color: #CBCBCB;
+    border-radius: 15px;
+}
+
+.modal-body.side-div-wrap {
+    padding: 14px;
+}
+
+.line-height-14 {
+    line-height: 14px;
+}
+
 @media screen and (max-width: 767px) {
     .adjust-with-field {
         margin-top: 1rem;
@@ -1126,6 +1152,12 @@ header #btn-logout {
 
     .fn-30 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .side-scroll-div {
+        max-height: 395px;
     }
 }
 
