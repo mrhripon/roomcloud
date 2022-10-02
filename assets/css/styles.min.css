@@ -857,6 +857,8 @@ input.form-control::placeholder {
     #main-menu {
         display: block
     }
+
+
 }
 
 #main-menu a {
@@ -1159,6 +1161,23 @@ header #btn-logout {
 @media screen and (max-width: 991px) {
     .side-scroll-div {
         max-height: 395px;
+    }
+
+    header .v-line.mx-3 {
+        margin-right: 0 !important;
+    }
+
+    header .form-select.form-select-icon.custom-select {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .form-select.form-select-icon.custom-select {
+        font-size: 12px;
+        min-width: 122px;
+        padding-right: 28px;
+        margin-left: -24px;
     }
 }
 
