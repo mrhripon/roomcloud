@@ -845,11 +845,12 @@ input.form-control::placeholder {
 #main-menu {
     bottom: 0;
     right: 0;
-    transform: translate(-6px, calc(100% + 14px));
+    transform: translate(-24px, calc(100% + 14px));
     z-index: 1;
     display: grid;
     grid-template-columns: auto auto;
     gap: .25rem;
+    padding-right: 0 !important;
 }
 
 @media (min-width:992px) {
