@@ -871,11 +871,7 @@ input.form-control::placeholder {
     background-color: #000;
     color: #fff;
     border-radius: 0;
-    text-transform: capitalize
-}
-
-#main-menu a.active {
-    border-color: red
+    text-transform: capitalize;
 }
 
 .img-500 {
